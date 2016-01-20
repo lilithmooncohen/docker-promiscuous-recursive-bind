@@ -1,0 +1,8 @@
+bind:
+  image: ryanckoch/promiscuous-recursive-bind
+  restart: always
+  ports:
+  - "53:53/udp"
+  - "53:53"
+  environment:
+  - DNS_SERVERS="8.8.8.8 8.8.4.4"
